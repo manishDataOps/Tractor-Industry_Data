@@ -64,6 +64,7 @@ model1 = {"mm","ptl"},
 model2 = {"eic","tafe"},
 model3 = {"esc","kubota"}
 in 
+// create model grouping
 if 
 List.AnyTrue(
     List.Transform(
