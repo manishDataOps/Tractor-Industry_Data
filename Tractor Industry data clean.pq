@@ -43,6 +43,7 @@ Table.AddIndexColumn(
     "Helper", each if Text.Contains([Column1],"year",Comparer.OrdinalIgnoreCase) then [Index] else null ),
     {"Helper"}),
 
+// group make table
 group_table =
 Table.Combine(
     Table.Group(
