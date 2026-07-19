@@ -1,3 +1,4 @@
+// data import
 let
  Source = Folder.Files("E:\Manish\tma data"),
  cleandata = let
@@ -10,6 +11,7 @@ Excel.Workbook(_), each
     Text.Contains([Item],"sheet2",Comparer.OrdinalIgnoreCase))
 })[[Content]],
 
+// rxpand table
 expand_table =
 Table.SelectRows(
 Table.SelectRows(
@@ -27,6 +29,7 @@ allcoll =
 List.Distinct(
     cleanup[Column1]),
 
+// data cleaning
 firstcoll =
 List.Select(
     allcoll, each
@@ -86,3 +89,6 @@ in
 table_group
 in
     Custom2
+
+
+    
